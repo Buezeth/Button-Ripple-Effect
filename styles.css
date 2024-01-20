@@ -3,23 +3,29 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background: #000;
+    font-family: cursive;
     height: 100vh;
 }
 
 .button-link {
     height: 70px;
-    width: 120px;
-    background-color: wheat;
+    width: 200px;
+    background-color: rgb(51, 5, 94);
     border-radius: 10px;
+    border: 1px solid blue;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     color: black;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.8);
+    box-shadow: 1px 4px 8px rgba(255,255,255,0.8);
     overflow: hidden;
     position: relative;
     
+}
+.button-link span {
+    color: whitesmoke;
 }
 
 .button-link::before {
@@ -31,13 +37,13 @@ body {
     left: var(--yPos);
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    background: beige;
+    background:  rgb(109, 10, 248);
     transition: all 0.5s;
 }
 
 .button-link:hover::before {
-    width: 300px;
-    height: 300px;
+    width: 410px;
+    height: 410px;
 }
 
 #button-span {
